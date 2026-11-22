@@ -4,5 +4,6 @@
     {
         // JoinDate 
         public string? Photo {  set; get; }
+        public ICollection<MemberShip> Members { set; get; }
     }
 }

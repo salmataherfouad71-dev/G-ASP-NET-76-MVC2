@@ -4,5 +4,6 @@
     {
         // HireDate 
         public Speciality Speciality { set; get; }
+        public ICollection<Session> Sessions { set; get; }
     }
 }
