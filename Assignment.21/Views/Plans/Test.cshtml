@@ -1,0 +1,32 @@
+﻿@{
+	//Code C#:
+	int age =21;
+	string pageTitle="Plans";
+	List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+}
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title>@pageTitle</title>
+	</head>
+	<body>
+		<h1>This is a test Page for Plans.</h1>
+		<p>@age</p>
+		<p>@age+1</p>
+		<p>@(age+1)</p>
+		@if(age<18)
+		{
+			<p>Adult</p>
+		}
+		else
+		{
+			<p>Manor</p>
+		}
+		@foreach(var item in numbers)
+		{
+			<p>@item</p>
+		}
+		<a href="/Home/Index">Home</a>
+	</body>
+</html>	
